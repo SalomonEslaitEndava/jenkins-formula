@@ -1,3 +1,8 @@
+java-install:
+  pkg.installed:
+    - pkgs: 
+      - java-1.8.0-openjdk
+
 {% from "jenkins/map.jinja" import jenkins with context %}
 
 {% set extra_groups = jenkins.extra_groups -%}
